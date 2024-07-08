@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Performance Comparison</title>
+    <script src="wasm_exec.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Performance Comparison: Go Wasm vs JavaScript</h1>
+    <label for="loopCount">Loop Count:</label>
+    <input type="number" id="loopCount" value="10000000">
+    <button onclick="comparePerformance()">Compare Performance</button>
+    <br><br>
+    <div id="results">
+        <p id="resultGo">Go (Wasm) result will appear here</p>
+        <p id="resultJs">JavaScript result will appear here</p>
+    </div>
+</body>
+
+</html>

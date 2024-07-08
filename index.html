@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Markdown to HTML Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="wasm_exec.js"></script>
+</head>
+
+<body>
+    <h2>Markdown to HTML Converter</h2>
+    <label for="markdownInput">Input Markdown:</label><br>
+    <textarea id="markdownInput" rows="10" cols="80"># Hello, Markdown!
+**This** is *Markdown*.</textarea><br><br>
+
+    <button onclick="convertMarkdownToHTMLWasm()">Convert with WebAssembly (wasm)</button>
+    <button onclick="convertMarkdownToHTMLJS()">Convert without WebAssembly</button><br><br>
+
+    <h3>Output HTML:</h3>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
